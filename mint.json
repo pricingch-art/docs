@@ -7,9 +7,9 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#12A7D3",
-    "light": "#81D7F7",
-    "dark": "#004E7A"
+    "primary": "#f25e3e",
+    "light": "#f79e8b",
+    "dark": "#721b08"
   },
   "topbarLinks": [{ "name": "Home", "url": "https://pricingch.art" }],
   "topbarCtaButton": {
@@ -31,13 +31,16 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify"
+    "twitter": "https://twitter.com/pricingch_art",
+    "github": "https://github.com/pricingch-art"
   },
   "backgroundImage": "/background.png",
   "api": {
     "playground": {
       "mode": "hide"
     }
+  },
+  "analytics": {
+    "posthog": { "apiKey": "phc_OLbg5WNCAxsIWPEyCczmBiPgTundbB2IBOnibnEbmNJ" }
   }
 }
