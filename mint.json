@@ -26,19 +26,18 @@
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Endpoints",
+      "pages": ["api-reference/get-all-plans"]
     }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/mintlify"
   },
-  "backgroundImage": "/background.png"
+  "backgroundImage": "/background.png",
+  "api": {
+    "playground": {
+      "mode": "hide"
+    }
+  }
 }

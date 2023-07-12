@@ -1,0 +1,119 @@
+---
+title: "Get Plans"
+api: "GET https://api.pricingch.art/public/plans"
+description: "This endpoint gets all the plans available for a given project."
+authMethod: "bearer"
+mode: "hide"
+---
+
+### Headers
+
+<ParamField header="authorization" type="string" required>
+  The authorization token for the project.
+</ParamField>
+
+### Response
+
+<ResponseField name="id" type="string">
+  The ID of the project.
+</ResponseField>
+
+<ResponseField name="name" type="string">
+  The name of the project.
+</ResponseField>
+
+<ResponseField name="plans" type="array">
+
+All the plans of the project.
+
+<Expandable title="details">
+
+<ResponseField name="id" type="number">
+  The ID of the plan.
+</ResponseField>
+
+<ResponseField name="name" type="string">
+  The name of the plan.
+</ResponseField>
+
+<ResponseField name="headline" type="string or null">
+  The headline of the plan.
+</ResponseField>
+
+<ResponseField name="price" type="string">
+  The price of the plan.
+</ResponseField>
+
+<ResponseField name="currency" type="string">
+  The currency of the plan.
+</ResponseField>
+
+<ResponseField name="interval" type="string">
+  The interval of the plan.
+</ResponseField>
+
+<ResponseField name="ctaText" type="string or null">
+  The call to action text of the plan.
+</ResponseField>
+
+<ResponseField name="isHighlighted" type="boolean or null">
+  Whether the plan is highlighted or not.
+</ResponseField>
+
+<ResponseField name="features" type="array">
+  Features of the plan.
+
+<Expandable title="details">
+  <ResponseField name="id" type="number">
+    The ID of the feature.
+  </ResponseField>
+
+  <ResponseField name="text" type="string">
+    The feature text.
+  </ResponseField>
+</Expandable>
+
+</ResponseField>
+
+</Expandable>
+
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --request GET \
+  --url https://api.pricingch.art/public/plans/all \
+  --header 'authorization: Bearer <YOUR_API_KEY>'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "id": "project_id",
+  "name": "project_name",
+  "plans": [
+    {
+      "id": "plan_id",
+      "name": "plan_name",
+      "headline": "plan_headline",
+      "price": "plan_price",
+      "currency": "plan_currency",
+      "interval": "plan_interval",
+      "ctaText": "plan_ctaText",
+      "isHighlighted": "plan_isHighlighted",
+      "features": [
+        {
+          "id": "feature_id",
+          "text": "feature_text"
+        }
+      ]
+    }
+  ]
+}
+```
+
+</ResponseExample>
