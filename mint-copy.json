@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Pricingch.art",
   "logo": {
-    "dark": "/logo/favicon.svg",
-    "light": "/logo/favicon.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -11,7 +11,12 @@
     "light": "#81D7F7",
     "dark": "#004E7A"
   },
-  "topbarLinks": [{ "name": "Home", "url": "https://pricingch.art" }],
+  "topbarLinks": [
+    {
+      "name": "Documentation",
+      "url": "https://docs.pricingch.art"
+    }
+  ],
   "topbarCtaButton": {
     "name": "Dashboard",
     "url": "https://app.pricingch.art"
@@ -20,6 +25,16 @@
     {
       "group": "Get Started",
       "pages": ["introduction"]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation"
+      ]
     },
     {
       "group": "API Documentation",

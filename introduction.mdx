@@ -1,60 +1,22 @@
 ---
 title: Introduction
-description: 'Welcome to the home of your new documentation'
+description: "Pricingch.art allows you to create pricing plans and access those with a simple API."
 ---
 
 ## Setting up
 
-The first step to world-class documentation is setting up your editing environnments.
+- The first step is to create a pricingch.art account if you haven't created one yet. Head over to [app.pricingch.art](https://app.pricingch.art) and create an account.
+- Next create a new project. Once you have created a project, you will be redirected to the project details page.
+- Start adding your plans and features. You can add as many plans and features as you want.
+- Once you have added your plans and features, go to the `API Keys` tab to create an API key. You will need this API key to access your plans and features.
+- And Voila! You are all set to use the API in your application.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development.
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect.
-  </Card>
-</CardGroup>
+Example API call to get all plans:
 
-## Make it yours
+```bash
+curl --request GET \
+  --url https://api.pricingch.art/public/plans/all \
+  --header 'authorization: Bearer <YOUR_API_KEY>'
+```
 
-Update your docs to your brand and add valuable content for the best user conversion.
-
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands.
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec.
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users.
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation.
-  </Card>
-</CardGroup>
+Please visit the [API Reference](/api-reference) section to learn more about the API.
